@@ -47,6 +47,10 @@ function Weather() {
         onChange={(e) => setCityName(e.target.value)}
       />
 
+      <div>
+        <h1>City ID is: {Id}</h1>
+      </div>
+
       <div className="temp__cont">
         <div className="temp__contl">{Tempr}</div>
 
@@ -57,10 +61,6 @@ function Weather() {
         src={`http://openweathermap.org/img/wn/${Icon}.png`}
         alt="Icon"
       ></img>
-
-      <div>
-        <h1>City ID is: {Id}</h1>
-      </div>
 
       <div>
         <div>
