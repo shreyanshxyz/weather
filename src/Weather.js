@@ -11,6 +11,7 @@ function Weather() {
   const [CurrentTemp, setCurrentTemp] = useState();
   const [Humi, setHumi] = useState();
   const [Desc, setDesc] = useState();
+  const [WSpeed, setWspeed] = useState();
 
   const apiCall = `https://api.openweathermap.org/data/2.5/weather?q=${CityName}&units=metric&appid=${API_KEY}`;
 
@@ -23,6 +24,7 @@ function Weather() {
       setDesc(result.data.weather[0].description);
       setHumi(result.data.main.humidity);
       setCurrentTemp(result.data.main.temp);
+      setWspeed(result.data.wind.speed);
       //   setIcon(result.data.weather[0].icon);
     }
 
@@ -53,8 +55,8 @@ function Weather() {
           <h3>Maximum: {Max} °C</h3>
         </div>
         <div className="hum__wind">
-          <h3>Humidity: {Humi}</h3>
-          <h3>Wind Speed</h3>
+          <h3>Humidity: {Humi}%</h3>
+          <h3>Wind Speed: {WSpeed} m/s</h3>
         </div>
       </div>
     </div>
