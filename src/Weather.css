@@ -13,27 +13,11 @@
   border: 1px solid #fff;
 }
 
-.min__max {
-  display: flex;
-}
-
-.wind {
-  display: flex;
-}
-
-.current__temp {
-  padding-top: 20px;
+.weather__desc {
+  text-transform: capitalize;
 }
 
 .city__name {
-  padding-top: 20px;
-}
-
-.min__max h3 {
-  padding: 20px;
-}
-
-.wind h3 {
-  padding-left: 10px;
-  padding-right: 10px;
+  /* padding-top: 20px; */
+  text-transform: uppercase;
 }
