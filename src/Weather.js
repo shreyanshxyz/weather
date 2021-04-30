@@ -2,7 +2,9 @@ import React, { useState } from "react";
 import "./Weather.css";
 
 function Weather() {
+  const API_KEY = "83ae873f99e8cca64fd2e00d659b24be";
   const [CityName, setCityName] = useState("Berlin");
+  const OWMapi = `https://api.openweathermap.org/data/2.5/weather?q=${CityName}&units=metric&appid=${API_KEY}`;
 
   return (
     <div className="weather__component">
