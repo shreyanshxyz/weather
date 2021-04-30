@@ -1,9 +1,13 @@
-.weather__component {
+.weather__main {
+  margin-top: 150px;
+  margin-left: 150px;
+}
+
+.weather__top {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  padding: 150px;
 }
 
 .search {
@@ -14,10 +18,16 @@
 }
 
 .weather__desc {
+  padding-top: 20px;
   text-transform: capitalize;
 }
 
 .city__name {
-  /* padding-top: 20px; */
+  padding-top: 10px;
+  /* padding-bottom: 700%; */
   text-transform: uppercase;
+}
+
+.weather__bottom {
+  display: flex;
 }
