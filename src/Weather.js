@@ -42,22 +42,22 @@ function Weather() {
       <h1 className="city__name">Hello</h1>
       <h1 className="weather__image">Image</h1> */}
       <input
+        className="search"
         placeholder="City Name"
         value={CityName}
         onChange={(e) => setCityName(e.target.value)}
       />
 
-      <div>
+      <div className="city__name">
         <h1>{Id}</h1>
       </div>
 
-      <div className="temp__cont">
-        <div className="temp__contl">{Tempr}</div>
-
-        <div className="temp__contr">{Humi}</div>
+      <div className="min__max">
+        <h3>Minimum</h3>
+        <h3>Maximum</h3>
       </div>
 
-      <img
+      {/* <img
         src={`http://openweathermap.org/img/wn/${Icon}.png`}
         alt="Icon"
       ></img>
@@ -67,7 +67,7 @@ function Weather() {
           <h3>It is currently {Maahol}</h3>
         </div>
         <p>{Desc}</p>
-      </div>
+      </div> */}
     </div>
   );
 }
