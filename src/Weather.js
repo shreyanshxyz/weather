@@ -36,25 +36,30 @@ function Weather() {
   });
 
   return (
-    <div className="weather__component">
-      <input
-        className="search"
-        placeholder="City Name"
-        value={CityName}
-        onChange={(e) => setCityName(e.target.value)}
-      />
-      <h3 className="weather__desc">{Desc}</h3>
-      <h1 className="city__name">{Id}</h1>
-      <h1 className="current__temp">{CurrentTemp} °C</h1>
-      <h1>Image</h1>
-      <h1 className="main__weather">{MainWeather}</h1>
-      <div className="min__max">
-        <h3>Minimum: {Min} °C</h3>
-        <h3>Maximum: {Max} °C</h3>
+    <div className="weather__main">
+      <div className="weather__top">
+        <input
+          className="search"
+          placeholder="City Name"
+          value={CityName}
+          onChange={(e) => setCityName(e.target.value)}
+        />
+        <h3 className="weather__desc">{Desc}</h3>
+        <h1 className="city__name">{Id}</h1>
       </div>
-      <div className="wind">
-        <h3>Humidity: {Humi}</h3>
-        <h3>Wind Speed</h3>
+
+      <div className="weather__bottom">
+        <h1 className="current__temp">{CurrentTemp} °C</h1>
+        <h1>Image</h1>
+        <h1 className="main__weather">{MainWeather}</h1>
+        <div className="min__max">
+          <h3>Minimum: {Min} °C</h3>
+          <h3>Maximum: {Max} °C</h3>
+        </div>
+        <div className="wind">
+          <h3>Humidity: {Humi}</h3>
+          <h3>Wind Speed</h3>
+        </div>
       </div>
     </div>
   );
