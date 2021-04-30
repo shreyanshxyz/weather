@@ -47,3 +47,11 @@
   padding-top: 10px;
   display: flex;
 }
+
+.min {
+  padding-right: 10px;
+}
+
+.max {
+  padding-left: 10px;
+}
