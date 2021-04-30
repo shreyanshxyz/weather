@@ -9,3 +9,11 @@
 .search {
   min-height: 30px;
 }
+
+.min__max {
+  display: flex;
+}
+
+.min__max h3 {
+  padding: 20px;
+}
