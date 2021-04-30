@@ -1,6 +1,7 @@
 import "./App.css";
 import Nav from "./Nav";
 import Weather from "./Weather";
+import Footer from "./Footer";
 
 function App() {
   return (
@@ -9,7 +10,7 @@ function App() {
 
       <Weather />
 
-      {/* Footer */}
+      <Footer />
     </div>
   );
 }
