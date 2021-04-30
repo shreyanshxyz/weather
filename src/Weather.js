@@ -16,6 +16,7 @@ function Weather() {
       const result = await axios.get(apiCall);
       setId(result.data.name);
       setMin(result.data.main.temp_min);
+      setMax(result.data.main.temp_max);
       //   setMaahol(result.data.weather[0].main);
       //   setDesc(result.data.weather[0].description);
       //   setHumi(result.data.main.humidity);
@@ -51,8 +52,8 @@ function Weather() {
       </div>
 
       <div className="min__max">
-        <h3>{Min} ℃</h3>
-        <h3>Maximum</h3>
+        <h3>Minimum: {Min} ℃</h3>
+        <h3>Maximum: {Max} ℃</h3>
       </div>
 
       {/* <img
