@@ -48,12 +48,17 @@ function Weather() {
         value={CityName}
         onChange={(e) => setCityName(e.target.value)}
       />
-      <h1 className="current__temp">{CurrentTemp}</h1>
       <h1 className="city__name">{Id}</h1>
+      <h1 className="current__temp">{CurrentTemp} °C</h1>
+      <h1>Image</h1>
       <h1 className="main__weather">{MainWeather}</h1>
       <div className="min__max">
-        <h3>Minimum: {Min} ℃</h3>
-        <h3>Maximum: {Max} ℃</h3>
+        <h3>Minimum: {Min} °C</h3>
+        <h3>Maximum: {Max} °C</h3>
+      </div>
+      <div className="wind">
+        <h3>Wind Speed:</h3>
+        <h3>Wind Direction</h3>
       </div>
     </div>
   );

@@ -14,10 +14,23 @@
   display: flex;
 }
 
+.wind {
+  display: flex;
+}
+
+.current__temp {
+  padding-top: 20px;
+}
+
 .city__name {
   padding-top: 20px;
 }
 
 .min__max h3 {
   padding: 20px;
+}
+
+.wind h3 {
+  padding-left: 10px;
+  padding-right: 10px;
 }
