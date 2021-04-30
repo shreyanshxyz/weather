@@ -51,8 +51,8 @@ function Weather() {
       <div className="weather__bottom">
         <h1 className="current__temp">{CurrentTemp} °C</h1>
         <div className="min__max">
-          <h3>Minimum: {Min} °C</h3>
-          <h3>Maximum: {Max} °C</h3>
+          <h3 className="min">Minimum: {Min} °C</h3>
+          <h3 className="max">Maximum: {Max} °C</h3>
         </div>
         <div className="hum__wind">
           <h3>Humidity: {Humi}%</h3>
