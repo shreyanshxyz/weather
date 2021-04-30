@@ -30,14 +30,14 @@
 
 .weather__bottom {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
 }
 
 .current__temp {
   font-size: 100px;
 }
 
-.current__temp__right {
+.min__max {
+  padding-top: 10px;
   display: flex;
-  flex-direction: column;
 }
