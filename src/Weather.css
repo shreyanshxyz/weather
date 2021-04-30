@@ -1,0 +1,11 @@
+.weather__component {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 150px;
+}
+
+.search {
+  min-height: 30px;
+}

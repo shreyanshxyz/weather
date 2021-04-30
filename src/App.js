@@ -1,12 +1,13 @@
 import "./App.css";
-import Nav from "./Nav";
+// import Nav from "./Nav";
+import Weather from "./Weather";
 
 function App() {
   return (
     <div className="App">
-      <Nav />
+      {/* <Nav /> */}
 
-      {/* App */}
+      <Weather />
 
       {/* Footer */}
     </div>

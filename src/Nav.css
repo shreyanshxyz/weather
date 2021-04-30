@@ -1,0 +1,27 @@
+.nav__main {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  /* color: white;
+  background-color: black; */
+}
+
+.nav__right {
+  display: flex;
+  flex-direction: row;
+}
+
+.nav__left {
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+.nav__right {
+  margin-top: 20px;
+  margin-right: 20px;
+}
+
+.nav__right a {
+  padding-right: 30px;
+  text-decoration: none;
+}
