@@ -11,6 +11,7 @@ function Weather() {
   const [CurrentTemp, setCurrentTemp] = useState();
   const [MainWeather, setMainWeather] = useState();
   const [Humi, setHumi] = useState();
+  const [Desc, setDesc] = useState();
 
   const apiCall = `https://api.openweathermap.org/data/2.5/weather?q=${CityName}&units=metric&appid=${API_KEY}`;
 
@@ -21,7 +22,7 @@ function Weather() {
       setMin(result.data.main.temp_min);
       setMax(result.data.main.temp_max);
       setMainWeather(result.data.weather[0].main);
-      //   setDesc(result.data.weather[0].description);
+      setDesc(result.data.weather[0].description);
       setHumi(result.data.main.humidity);
       setCurrentTemp(result.data.main.temp);
       //   setIcon(result.data.weather[0].icon);
@@ -42,6 +43,7 @@ function Weather() {
         value={CityName}
         onChange={(e) => setCityName(e.target.value)}
       />
+      <h3 className="weather__desc">{Desc}</h3>
       <h1 className="city__name">{Id}</h1>
       <h1 className="current__temp">{CurrentTemp} °C</h1>
       <h1>Image</h1>
