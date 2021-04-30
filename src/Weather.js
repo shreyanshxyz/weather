@@ -9,7 +9,6 @@ function Weather() {
   const [Min, setMin] = useState();
   const [Max, setMax] = useState();
   const [CurrentTemp, setCurrentTemp] = useState();
-  const [MainWeather, setMainWeather] = useState();
   const [Humi, setHumi] = useState();
   const [Desc, setDesc] = useState();
 
@@ -21,7 +20,6 @@ function Weather() {
       setId(result.data.name);
       setMin(result.data.main.temp_min);
       setMax(result.data.main.temp_max);
-      setMainWeather(result.data.weather[0].main);
       setDesc(result.data.weather[0].description);
       setHumi(result.data.main.humidity);
       setCurrentTemp(result.data.main.temp);
@@ -52,7 +50,6 @@ function Weather() {
         <h1 className="current__temp">{CurrentTemp} °C</h1>
 
         <div className="current__temp__right">
-          <h1 className="main__weather">{MainWeather}</h1>
           <div className="min__max">
             <h3>Minimum: {Min} °C</h3>
             <h3>Maximum: {Max} °C</h3>
