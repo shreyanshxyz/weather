@@ -55,8 +55,8 @@ function Weather() {
           <h3 className="max">Maximum: {Max} °C</h3>
         </div>
         <div className="hum__wind">
-          <h3>Humidity: {Humi}%</h3>
-          <h3>Wind Speed: {WSpeed} m/s</h3>
+          <h3 className="hum">Humidity: {Humi}%</h3>
+          <h3 className="wind__speed">Wind Speed: {WSpeed} m/s</h3>
         </div>
       </div>
     </div>
