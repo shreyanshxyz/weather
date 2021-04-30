@@ -30,4 +30,10 @@
 
 .weather__bottom {
   display: flex;
+  flex-direction: row;
+}
+
+.current__temp__right {
+  display: flex;
+  flex-direction: column;
 }
