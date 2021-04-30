@@ -1,9 +1,13 @@
 import React from "react";
+import "./Footer.css";
 
 function Footer() {
   return (
     <div className="footer">
-      <h3>Footer</h3>
+      <h4>
+        Made with ❤️ by{" "}
+        <a href="https://www.github.com/shreyanshxyz">@shreyanshxyz</a>
+      </h4>
     </div>
   );
 }
