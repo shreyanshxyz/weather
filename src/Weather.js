@@ -8,6 +8,8 @@ function Weather() {
   const [Id, setId] = useState();
   const [Min, setMin] = useState();
   const [Max, setMax] = useState();
+  const [CurrentTemp, setCurrentTemp] = useState();
+  const [MainWeather, setMainWeather] = useState();
 
   const apiCall = `https://api.openweathermap.org/data/2.5/weather?q=${CityName}&units=metric&appid=${API_KEY}`;
 
@@ -17,10 +19,10 @@ function Weather() {
       setId(result.data.name);
       setMin(result.data.main.temp_min);
       setMax(result.data.main.temp_max);
-      //   setMaahol(result.data.weather[0].main);
+      setMainWeather(result.data.weather[0].main);
       //   setDesc(result.data.weather[0].description);
       //   setHumi(result.data.main.humidity);
-      //   setTempr(result.data.main.temp);
+      setCurrentTemp(result.data.main.temp);
       //   setIcon(result.data.weather[0].icon);
     }
 
@@ -46,27 +48,15 @@ function Weather() {
         value={CityName}
         onChange={(e) => setCityName(e.target.value)}
       />
-
-      <div className="city__name">
-        <h1>{Id}</h1>
+      <div>
+        <h1>{CurrentTemp}</h1>
       </div>
-
+      <h1 className="city__name">{Id}</h1>
+      <h1 className="main__weather">{MainWeather}</h1>
       <div className="min__max">
         <h3>Minimum: {Min} ℃</h3>
         <h3>Maximum: {Max} ℃</h3>
       </div>
-
-      {/* <img
-        src={`http://openweathermap.org/img/wn/${Icon}.png`}
-        alt="Icon"
-      ></img>
-
-      <div>
-        <div>
-          <h3>It is currently {Maahol}</h3>
-        </div>
-        <p>{Desc}</p>
-      </div> */}
     </div>
   );
 }
