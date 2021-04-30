@@ -4,7 +4,7 @@ import axios from "axios";
 
 function Weather() {
   const API_KEY = "83ae873f99e8cca64fd2e00d659b24be";
-  const [CityName, setCityName] = useState("Berlin");
+  const [CityName, setCityName] = useState("London");
   const [Id, setId] = useState();
   const [Maahol, setMaahol] = useState();
   const [Desc, setDesc] = useState("");
@@ -48,7 +48,7 @@ function Weather() {
       />
 
       <div>
-        <h1>City ID is: {Id}</h1>
+        <h1>{Id}</h1>
       </div>
 
       <div className="temp__cont">
