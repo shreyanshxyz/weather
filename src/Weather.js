@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./Weather.css";
+import axios from "axios";
 
 function Weather() {
   const API_KEY = "83ae873f99e8cca64fd2e00d659b24be";
@@ -32,16 +33,14 @@ function Weather() {
   });
 
   return (
-    // <div className="weather__component">
-    //   <input
-    //     value={CityName}
-    //     className="search"
-    //     onChange={(e) => setCityName(e.target.value)}
-    //   ></input>
-    //   <h1 className="city__name">Hello</h1>
-    //   <h1 className="weather__image">Image</h1>
-    // </div>
-    <>
+    <div className="weather__component">
+      {/* <input
+        value={CityName}
+        className="search"
+        onChange={(e) => setCityName(e.target.value)}
+      ></input>
+      <h1 className="city__name">Hello</h1>
+      <h1 className="weather__image">Image</h1> */}
       <input
         placeholder="City Name"
         value={CityName}
@@ -69,7 +68,7 @@ function Weather() {
         </div>
         <p>{Desc}</p>
       </div>
-    </>
+    </div>
   );
 }
 
