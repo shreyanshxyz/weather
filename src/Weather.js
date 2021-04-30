@@ -6,11 +6,8 @@ function Weather() {
   const API_KEY = "83ae873f99e8cca64fd2e00d659b24be";
   const [CityName, setCityName] = useState("London");
   const [Id, setId] = useState();
-  const [Maahol, setMaahol] = useState();
-  const [Desc, setDesc] = useState("");
-  const [Humi, setHumi] = useState();
-  const [Tempr, setTempr] = useState();
-  const [Icon, setIcon] = useState();
+  const [Min, setMin] = useState();
+  const [Max, setMax] = useState();
 
   const apiCall = `https://api.openweathermap.org/data/2.5/weather?q=${CityName}&units=metric&appid=${API_KEY}`;
 
@@ -18,11 +15,12 @@ function Weather() {
     async function getData() {
       const result = await axios.get(apiCall);
       setId(result.data.name);
-      setMaahol(result.data.weather[0].main);
-      setDesc(result.data.weather[0].description);
-      setHumi(result.data.main.humidity);
-      setTempr(result.data.main.temp);
-      setIcon(result.data.weather[0].icon);
+      setMin(result.data.main.temp_min);
+      //   setMaahol(result.data.weather[0].main);
+      //   setDesc(result.data.weather[0].description);
+      //   setHumi(result.data.main.humidity);
+      //   setTempr(result.data.main.temp);
+      //   setIcon(result.data.weather[0].icon);
     }
 
     console.log(getData);
@@ -53,7 +51,7 @@ function Weather() {
       </div>
 
       <div className="min__max">
-        <h3>Minimum</h3>
+        <h3>{Min} ℃</h3>
         <h3>Maximum</h3>
       </div>
 
