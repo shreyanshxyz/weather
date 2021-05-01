@@ -33,7 +33,7 @@ function Weather() {
     //     cleanup
     // }
     getData();
-  });
+  }, [apiCall]);
 
   return (
     <div className="weather__main">
