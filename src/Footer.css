@@ -1,5 +1,7 @@
 .footer {
   position: fixed;
+  /* display: flex; */
+  /* justify-content: center; */
   bottom: 0;
   margin-bottom: 20px;
   margin-left: 20px;
