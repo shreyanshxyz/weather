@@ -1,10 +1,9 @@
 .footer {
-  position: fixed;
-  /* display: flex; */
-  /* justify-content: center; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
   bottom: 0;
-  margin-bottom: 20px;
-  margin-left: 20px;
+  padding-top: 20%;
 }
 
 .footer a {
