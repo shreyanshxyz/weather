@@ -2,10 +2,15 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  bottom: 0;
-  padding-top: 20%;
+}
+
+h4 {
+  position: absolute;
+  bottom: 15px;
 }
 
 .footer a {
   text-decoration: none;
 }
+
+
