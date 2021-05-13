@@ -63,3 +63,19 @@
 .wind__speed {
   padding-left: 10px;
 }
+
+@media (max-width: 500px) {
+  .weather__main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20% 0 0 0;
+  }
+
+  .weather__top .search {
+    width: 300px;
+  }
+
+  
+}
